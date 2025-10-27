@@ -1,7 +1,7 @@
 <script setup>
 import AppHeader from './components/AppHeader.vue';
 import AppFooter from './components/AppFooter.vue';
-import AppHome from './components/AppHome.vue';
+import AppHome from './views/AppHome.vue';
 </script>
 
 <template>
