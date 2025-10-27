@@ -23,6 +23,16 @@ const router = createRouter({
             name : 'about',
             component:()=> import('../views/AppAbout.vue')
         },
+        {
+            path:'/text-interpolation',
+            name : 'Text interpolation',
+            component:()=> import('../views/lessons/TextInterpolation.vue')
+        },
+        {
+            path:'/exo-interpolation',
+            name : 'exercice interpolation',
+            component:()=> import('../views/exercices/exerciceInterpolation.vue')
+        }
 
     ]
 

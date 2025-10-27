@@ -11,22 +11,35 @@
                 </div>
                 <ul tabindex="-1"
                     class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                    <li><a>Item 1</a></li>
                     <li>
-                       <router-link to="/about" class="hover:text-primary">A propos</router-link>
+                        <router-link to="/text-interpolation" class="hover:text-primary">Text
+                            interpolation</router-link>
                     </li>
-                      <li>
+                    <li>
+                        <router-link to="/exo-interpolation" class="hover:text-primary">Exercice
+                            interpolation</router-link>
+                    </li>
+                    <li>
+                        <router-link to="/about" class="hover:text-primary">A propos</router-link>
+                    </li>
+                    <li>
                         <router-link to="/contact" class="hover:text-primary">Contact</router-link>
                     </li>
                 </ul>
             </div>
-              <router-link to="/" class="text-xl">Vue CheatSheet</router-link>
+            <router-link to="/" class="text-xl">Vue CheatSheet</router-link>
         </div>
         <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
-                <li><a>Item 1</a></li>
                 <li>
-                  <router-link to="/about" class="hover:text-primary">A propos</router-link>
+                    <router-link to="/text-interpolation" class="hover:text-primary">Text interpolation</router-link>
+                </li>
+                <li>
+                    <router-link to="/exo-interpolation" class="hover:text-primary">Exercice
+                        interpolation</router-link>
+                </li>
+                <li>
+                    <router-link to="/about" class="hover:text-primary">A propos</router-link>
                 </li>
                 <li>
                     <router-link to="/contact" class="hover:text-primary">Contact</router-link>
@@ -38,7 +51,4 @@
     </div>
 </template>
 
-<style scoped>
-
-
-</style>
+<style scoped></style>
