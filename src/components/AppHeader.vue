@@ -19,10 +19,12 @@
                             <li><a>Submenu 2</a></li>
                         </ul>
                     </li>
-                    <li><a href="/contact">Contact</a></li>
+                      <li class="rounded-box">
+                        <router-link to="/contact" class="hover:text-primary">Contact</router-link>
+                    </li>
                 </ul>
             </div>
-            <a class="btn btn-ghost text-xl" href="/">Vue Cheat Sheet</a>
+              <router-link to="/" class="text-xl">Vue CheatSheet</router-link>
         </div>
         <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
@@ -36,7 +38,9 @@
                         </ul>
                     </details>
                 </li>
-                <li><a href="/contact">Contact</a></li>
+                <li class="rounded-box">
+                    <router-link to="/contact" class="hover:text-primary">Contact</router-link>
+                </li>
             </ul>
         </div>
         <div class="navbar-end">
