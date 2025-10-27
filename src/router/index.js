@@ -17,6 +17,12 @@ const router = createRouter({
             name : 'contact',
             component:()=> import('../views/AppContact.vue')
         },
+        {
+            path:'/about',
+            alias:'/a-propos',
+            name : 'about',
+            component:()=> import('../views/AppAbout.vue')
+        },
 
     ]
 
