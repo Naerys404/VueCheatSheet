@@ -19,10 +19,10 @@
                             <li><a>Submenu 2</a></li>
                         </ul>
                     </li>
-                    <li><a>Item 3</a></li>
+                    <li><a href="/contact">Contact</a></li>
                 </ul>
             </div>
-            <a class="btn btn-ghost text-xl">Vue Cheat Sheet</a>
+            <a class="btn btn-ghost text-xl" href="/">Vue Cheat Sheet</a>
         </div>
         <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
@@ -36,7 +36,7 @@
                         </ul>
                     </details>
                 </li>
-                <li><a>Item 3</a></li>
+                <li><a href="/contact">Contact</a></li>
             </ul>
         </div>
         <div class="navbar-end">
