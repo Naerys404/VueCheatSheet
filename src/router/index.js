@@ -94,6 +94,11 @@ const router = createRouter({
             name: 'exo-watcher',
             component: () => import('../views/exercices/exo-watcher.vue')
         },
+        {
+            path: '/exo-styling',
+            name: 'exo-styling',
+            component: () => import('../views/exercices/exo-styling.vue')
+        },
     ]
 
 });

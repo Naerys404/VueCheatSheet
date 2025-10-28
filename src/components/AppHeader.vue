@@ -66,6 +66,9 @@
                                 <li>
                                     <router-link to="/exo-v-on" class="hover:text-primary">Exercice V-On </router-link>
                                 </li>
+                                <li>
+                                    <router-link to="/exo-styling" class="hover:text-primary">Exercice Dynamic styling</router-link>
+                                </li>
                             </ul>
                         </details>
                     </li>
@@ -138,7 +141,11 @@
                                 <router-link to="/exo-v-on" class="hover:text-primary">Exercice V-On </router-link>
                             </li>
                             <li>
-                                <router-link to="/exo-watcher" class="hover:text-primary">Exercice watchers </router-link>
+                                <router-link to="/exo-watcher" class="hover:text-primary">Exercice watchers
+                                </router-link>
+                            </li>
+                            <li>
+                                <router-link to="/exo-styling" class="hover:text-primary">Exercice Dynamic styling</router-link>
                             </li>
                         </ul>
                     </details>
