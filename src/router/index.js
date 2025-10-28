@@ -99,6 +99,11 @@ const router = createRouter({
             name: 'exo-styling',
             component: () => import('../views/exercices/exo-styling.vue')
         },
+        {
+            path: '/exo-styling-2',
+            name: 'exo-styling-2',
+            component: () => import('../views/exercices/exo-styling-2.vue')
+        },
     ]
 
 });
