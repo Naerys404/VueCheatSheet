@@ -37,7 +37,7 @@
                         <span class="label-text">Saisissez du texte et appuyez sur 'Échap'</span>
                     </div>
                     <input type="text"
-                        placeholder="Tapez et appuyez sur 'Esc'" class="input input-bordered w-full" @keydown.esc.prevent="submit"/>
+                        placeholder="Tapez et appuyez sur 'Esc'" class="input input-bordered w-full" @keyup.esc.prevent="submit"/>
                 </label>
                 <div class="mt-3 p-3 bg-base-100 rounded-box shadow">
                     <p>La valeur confirmée par 'Échap' est : <span class="badge badge-primary">{{ submittedInput }}</span></p>
