@@ -53,6 +53,11 @@ const router = createRouter({
             name: 'v-on',
             component: () => import('../views/lessons/lesson-event-binding.vue')
         },
+        {
+            path: '/exo-v-on',
+            name: 'exo-v-on',
+            component: () => import('../views/exercices/exerciceV-on.vue')
+        },
 
     ]
 

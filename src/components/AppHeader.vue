@@ -43,6 +43,9 @@
                                     <router-link to="/tp-vbind" class="hover:text-primary">TP
                                         V-bind / interpolation </router-link>
                                 </li>
+                                <li>
+                                    <router-link to="/exo-v-on" class="hover:text-primary">Exercice V-On </router-link>
+                                </li>
                             </ul>
                         </details>
                     </li>
@@ -75,6 +78,7 @@
                                 <router-link to="/text-interpolation" class="hover:text-primary">Text
                                     interpolation</router-link>
                             </li>
+
                         </ul>
                     </details>
                 </li>
@@ -90,11 +94,12 @@
                                 <router-link to="/tp-vbind" class="hover:text-primary">TP
                                     V-bind / interpolation </router-link>
                             </li>
+                            <li>
+                                <router-link to="/exo-v-on" class="hover:text-primary">Exercice V-On </router-link>
+                            </li>
                         </ul>
                     </details>
                 </li>
-
-
                 <li>
                     <router-link to="/about" class="hover:text-primary">A propos</router-link>
                 </li>
