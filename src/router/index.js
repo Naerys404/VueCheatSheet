@@ -58,6 +58,11 @@ const router = createRouter({
             name: 'exo-v-on',
             component: () => import('../views/exercices/exerciceV-on.vue')
         },
+        {
+            path: '/exo-combo-v-on',
+            name: 'exo-combo-v-on',
+            component: () => import('../views/exercices/exo-combo-v-on.vue')
+        },
 
     ]
 
