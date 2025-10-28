@@ -28,6 +28,26 @@
                                     <router-link to="/text-interpolation" class="hover:text-primary">Text
                                         interpolation</router-link>
                                 </li>
+                                <li>
+                                    <router-link to="/two-ways-binding" class="hover:text-primary">Two ways
+                                        binding</router-link>
+                                </li>
+                                <li>
+                                    <router-link to="/computed" class="hover:text-primary">Computed</router-link>
+                                </li>
+                                <li>
+                                    <router-link to="/watchers" class="hover:text-primary">Watchers</router-link>
+                                </li>
+                                <li>
+                                    <router-link to="/dynamic-styling" class="hover:text-primary">Dynamic
+                                        Styling</router-link>
+                                </li>
+                                <li>
+                                    <router-link to="/v-if" class="hover:text-primary">V-if</router-link>
+                                </li>
+                                <li>
+                                    <router-link to="/v-for" class="hover:text-primary">V-for</router-link>
+                                </li>
                             </ul>
                         </details>
                     </li>
@@ -78,6 +98,26 @@
                                 <router-link to="/text-interpolation" class="hover:text-primary">Text
                                     interpolation</router-link>
                             </li>
+                            <li>
+                                <router-link to="/two-ways-binding" class="hover:text-primary">Two ways
+                                    binding</router-link>
+                            </li>
+                            <li>
+                                <router-link to="/computed" class="hover:text-primary">Computed</router-link>
+                            </li>
+                            <li>
+                                <router-link to="/watchers" class="hover:text-primary">Watchers</router-link>
+                            </li>
+                            <li>
+                                <router-link to="/dynamic-styling" class="hover:text-primary">Dynamic
+                                    Styling</router-link>
+                            </li>
+                            <li>
+                                <router-link to="/v-if" class="hover:text-primary">V-if</router-link>
+                            </li>
+                            <li>
+                                <router-link to="/v-for" class="hover:text-primary">V-for</router-link>
+                            </li>
 
                         </ul>
                     </details>
@@ -96,6 +136,9 @@
                             </li>
                             <li>
                                 <router-link to="/exo-v-on" class="hover:text-primary">Exercice V-On </router-link>
+                            </li>
+                            <li>
+                                <router-link to="/exo-watcher" class="hover:text-primary">Exercice watchers </router-link>
                             </li>
                         </ul>
                     </details>

@@ -42,6 +42,7 @@ const router = createRouter({
             path: '/v-bind',
             name: 'lesson v-bind',
             component: () => import('../views/lessons/attribute-binding.vue')
+
         },
         {
             path: '/tp-vbind',
@@ -57,6 +58,41 @@ const router = createRouter({
             path: '/exo-v-on',
             name: 'exo-v-on',
             component: () => import('../views/exercices/exerciceV-on.vue')
+        },
+        {
+            path: '/two-ways-binding',
+            name: 'two-ways-binding',
+            component: () => import('../views/lessons/lesson-two-way-binding.vue')
+        },
+        {
+            path: '/watchers',
+            name: 'watchers',
+            component: () => import('../views/lessons/lesson-watchers.vue')
+        },
+        {
+            path: '/computed',
+            name: 'computed',
+            component: () => import('../views/lessons/lesson-computed-properties.vue')
+        },
+        {
+            path: '/dynamic-styling',
+            name: 'dynamic-styling',
+            component: () => import('../views/lessons/lesson-dynamic-styling.vue')
+        },
+        {
+            path: '/v-if',
+            name: 'v-if',
+            component: () => import('../views/lessons/lesson-conditional-rendering.vue')
+        },
+        {
+            path: '/v-for',
+            name: 'v-for',
+            component: () => import('../views/lessons/lesson-list-rendering.vue')
+        },
+        {
+            path: '/exo-watcher',
+            name: 'exo-watcher',
+            component: () => import('../views/exercices/exo-watcher.vue')
         },
     ]
 

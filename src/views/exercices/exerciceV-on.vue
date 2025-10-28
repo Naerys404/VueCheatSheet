@@ -54,11 +54,22 @@
             </div>
         </div>
     </div>
+    <div class="m-5 shadow-md p-10 rounded-2xl">
+        <h1 class="text-xl font-bold">Computed Bug Mode : Composition</h1>
+        <div class="flex items-baseline justify-center p-5">
+            <button @click="decrement(10)" class="btn w-1 mx-5 btn-error">-</button>
+            <p class="font-bold">Le nombre: <span class="badge badge-primary">{{ nombre }}</span></p>
+            <button @click="increment(10)" class="btn w-1 mx-5 btn-success">+</button>
+        </div>
+        <div class="border-t border-gray-200 pt-5 flex justify-center items-center">
+            <p>Résultat de la fonction afficherNameUser() : <span class="badge badge-info">{{ afficherNameUser }}</span></p>
+        </div>
+    </div>
 </template>
 
 
 <script setup lang="js">
-import { ref } from 'vue';
+import { ref, computed } from 'vue';
 
 let nombre = ref(0);
 
@@ -84,6 +95,27 @@ let submit = (event) => {
 let alertEvent = (event) => {
     alert('Plop');
 }
+
+let nameUser = ref('');
+
+// let afficherNameUser = () => {
+//     console.log("La fonction name est executée 1 fois");
+//     if(nameUser.value === ''){
+//         return "User connecté";
+//     } else {
+//         return "User offline";
+//     }
+
+// }
+
+//COMPUTED VERSION : la fonction est appelée dans le template sans les parenthèses !
+const afficherNameUser = computed(() => {
+    if(nameUser.value === ''){
+        return "User connecté";
+    } else {
+        return "User offline";
+    }
+});
 
 
 </script>
