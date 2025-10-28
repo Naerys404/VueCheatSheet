@@ -39,9 +39,19 @@ const router = createRouter({
             component: () => import('../views/lessons/inline-templating.vue')
         },
         {
-            path: '/tp-vbind',
+            path: '/v-bind',
             name: 'lesson v-bind',
+            component: () => import('../views/lessons/attribute-binding.vue')
+        },
+        {
+            path: '/tp-vbind',
+            name: 'exo v-bind',
             component: () => import('../views/exercices/tpVbind.vue')
+        },
+        {
+            path: '/v-on',
+            name: 'v-on',
+            component: () => import('../views/lessons/lesson-event-binding.vue')
         },
 
     ]

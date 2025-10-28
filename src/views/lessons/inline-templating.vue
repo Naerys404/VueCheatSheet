@@ -41,7 +41,7 @@
     &lt;script setup&gt;
     const htmlContent = '&lt;span style="color: blue;"&gt;Bonjour, Vue.js!&lt;/span&gt;';
     &lt;/script&gt;
-</code></pre>
+    </code></pre>
                     </div>
                     <div class="card-actions justify-center mt-4">
                         <div class="p-4 border rounded-box w-full text-center" v-html="htmlContent"></div>
