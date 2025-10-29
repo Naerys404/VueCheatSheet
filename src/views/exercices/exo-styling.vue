@@ -1,82 +1,79 @@
 <template>
-    <div class="m-5 p-5 flex flex-col gap-3 items-center">
-        <h1 class="text-xl">Exercice Dynamic Styling</h1>
-        <div class="flex gap-5 my-5">
-            <div class="card w-96 shadow-sm" :style="style1" @click="changeColor1">
-                <div class="card-body">
-                    <h2 class="card-title">Card title 1</h2>
-                    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-                </div>
-            </div>
-            <div class="card w-96 shadow-sm" :style="style2" @click="changeColor2">
-                <div class="card-body">
-                    <h2 class="card-title">Card title 2</h2>
-                    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-                </div>
-            </div>
-        </div>
-        <div class="flex gap-5 my-5">
-            <div class="card w-96 shadow-sm" @click="toggleClass1"
-                :class="{ 'colorChange1': defaultColor3, 'colorDefault': !defaultColor3 }">
-                <div class="card-body">
-                    <h2 class="card-title">Card title 3</h2>
-                    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-                </div>
-            </div>
-            <div class="card w-96 shadow-sm" @click="toggleClass2"
-                :class="{ 'colorChange2': defaultColor4, 'colorDefault': !defaultColor4 }">
-                <div class="card-body">
-                    <h2 class="card-title">Card title 4</h2>
-                    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-                </div>
-            </div>
-        </div>
+    <div class="container mx-auto p-4 md:p-8 bg-base-200 rounded-box shadow-xl">
+        <h3 class="text-2xl font-bold text-center mb-6">Dynamic Styling (Class)</h3>
 
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 justify-items-center">
+            <div class="col-span-1">
+                <div class="card bg-base-100 shadow-xl cursor-pointer transition-all duration-300 transform hover:scale-105"
+                    @click="selectionCard(1)" v-bind:style="{backgroundColor: selectCard1 ===true ? 'red':'aqua' }">
+                    <div class="card-body">
+                        <h5 class="card-title">Carte 1</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-1">
+                <div class="card bg-base-100 shadow-xl cursor-pointer transition-all duration-300 transform hover:scale-105"
+                    @click="selectionCard(2)" :style="{backgroundColor: selectCard2 ? 'green':'violet' }">
+                    <div class="card-body">
+                        <h5 class="card-title">Carte 2</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-1">
+                <div class="card bg-base-100 shadow-xl cursor-pointer transition-all duration-300 transform hover:scale-105"
+                    @click="selectionCard(3)" :class="{ class1: selectCard3 }">
+                    <div class="card-body">
+                        <h5 class="card-title">Carte 3</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-1">
+                <div class="card bg-base-100 shadow-xl cursor-pointer transition-all duration-300 transform hover:scale-105"
+                    @click="selectionCard(4)" :class="{ 'class2': selectCard4 }">
+                    <div class="card-body">
+                        <h5 class="card-title">Carte 4</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 
-<script setup lang="js">
+<script setup lang='js'>
+import { ref } from 'vue'
 
-import { ref } from 'vue';
+const selectCard1 = ref(false);
+const selectCard2 = ref(false);
+const selectCard3 = ref(false);
+const selectCard4 = ref(false);
 
-const style1 = ref({
-    backgroundColor: "white",
-})
-
-const style2 = ref({
-    backgroundColor: "white",
-})
-
-const defaultColor3 = ref(true);
-const defaultColor4 = ref(true);
-
-function changeColor1() {
-    style1.value.backgroundColor = style1.value.backgroundColor === 'white' ? 'cyan' : 'white';
+function selectionCard(uneCard) {
+    if (uneCard === 1) {
+        selectCard1.value = !selectCard1.value;
+        // selectCard2.value = false;
+    }
+    if (uneCard === 2) {
+        selectCard2.value = !selectCard2.value;
+        // selectCard1.value = false;
+    }
+    if (uneCard === 3) {
+    selectCard3.value = !selectCard3.value;
+  }
+  if (uneCard === 4) {
+    selectCard4.value = !selectCard4.value;
+  }
 }
-function changeColor2() {
-    style2.value.backgroundColor = style2.value.backgroundColor === 'white' ? 'violet' : 'white';
-}
-
-
-function toggleClass1() {
-    defaultColor3.value = !defaultColor3.value;
-}
-function toggleClass2() {
-    defaultColor4.value = !defaultColor4.value;
-}
-
 </script>
 
-<style scoped>
-.colorDefault {
-    background-color: white;
+<style scoped lang="css">
+/* Les styles sont gérés par DaisyUI et Tailwind, pas de CSS supplémentaire n'est nécessaire ici. */
+.class1 {
+  background-color: mediumslateblue;
+  font-style: italic;
 }
 
-.colorChange1 {
-    background-color: cadetblue;
-}
-
-.colorChange2 {
-    background-color: darkorange;
+.class2 {
+  background-color: chartreuse;
+  font-size: large;
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
     <div class="m-5 p-5 flex flex-col gap-3 items-center">
         <h1 class="text-xl">Exercice Watchers</h1>
-        <p>{{ counter }}</p>
+        <p class="badge badge-ghost p-4">{{ counter }}</p>
         <button class="btn btn-success" @click="increment">+</button>
 
     </div>
