@@ -40,7 +40,7 @@ const lesAmis = ref([
         name: "JAROD",
         phone: '+338765477',
         email: 'jAROD@seagal.com',
-        premium: true
+        premium: false
     },
     {
         id: 'yoyoyo',
@@ -54,7 +54,7 @@ const lesAmis = ref([
         name: "GussDX",
         phone: '+338765477',
         email: 'jAROD@seagal.com',
-        premium: true
+        premium: false
     }
 ]);
 

@@ -33,7 +33,7 @@
                             fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                         </svg>
-                        <span class="badge ">Premium: {{ premium ? 'Premium': 'Normal' }}</span>
+                        <span class="badge">{{ premium ? 'Un ami en OR': 'Un ami en PLOMB' }}</span>
                     </li>
                 </ul>
                
