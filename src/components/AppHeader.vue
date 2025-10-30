@@ -95,6 +95,10 @@
                                     <router-link to="/exo-props" class="hover:text-primary">Exercice
                                         props</router-link>
                                 </li>
+                                <li>
+                                    <router-link to="/exo-pokeprops" class="hover:text-primary">Exercice
+                                        Pokemon props</router-link>
+                                </li>
                             </ul>
                         </details>
                     </li>
@@ -202,6 +206,10 @@
                             <li>
                                 <router-link to="/exo-props" class="hover:text-primary">Exercice
                                     props</router-link>
+                            </li>
+                            <li>
+                                <router-link to="/exo-pokeprops" class="hover:text-primary">Exercice
+                                    Pokemon props</router-link>
                             </li>
                         </ul>
                     </details>

@@ -135,6 +135,11 @@ const router = createRouter({
             component: () => import('../views/exercices/exo-props.vue')
         },
         {
+            path: '/exo-pokeprops',
+            name: 'exo-pokeprops',
+            component: () => import('../views/exercices/exo-pokemonProps.vue')
+        },
+        {
             path: '/props',
             name: 'props',
             component: () => import('../views/lessons/lesson-props.vue')
