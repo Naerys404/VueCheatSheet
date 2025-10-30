@@ -1,7 +1,7 @@
 <template>
     <h1 class="text-2xl m-10 font-bold text-accent">Pokemon props</h1>
     <div class="flex flex-wrap justify-center gap-5">
-        <div v-for="(pokemon, index) in pokemons" :key="pokemon.pokedex_id" class="card bg-base-100 w-96 shadow-sm my-1">
+        <div v-for="(pokemon, index) in pokemons" :key="pokemon.pokedex_id">
             <one-pokemon :id="pokemon.pokedex_id" :name="pokemon.name.fr" :category="pokemon.category" :sprite="pokemon.sprites.regular" ></one-pokemon>
         </div>
     </div>
