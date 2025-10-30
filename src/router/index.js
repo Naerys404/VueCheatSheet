@@ -124,6 +124,21 @@ const router = createRouter({
             name: 'life-cycle',
             component: () => import('../views/lessons/lesson-lifecycle.vue')
         },
+        {
+            path: '/life-cycle-correction',
+            name: 'life-cycle-correction',
+            component: () => import('../views/exercices/exercice-lifecycle-api.vue')
+        },
+        {
+            path: '/exo-props',
+            name: 'exo-props',
+            component: () => import('../views/exercices/exo-props.vue')
+        },
+        {
+            path: '/props',
+            name: 'props',
+            component: () => import('../views/lessons/lesson-props.vue')
+        },
     ]
 
 });

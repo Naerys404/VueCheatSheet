@@ -51,6 +51,10 @@
                                 <li>
                                     <router-link to="/life-cycle" class="hover:text-primary">Life Cycle</router-link>
                                 </li>
+                                <li>
+                                    <router-link to="/props" class="hover:text-primary">Props : Parent vers
+                                        enfant</router-link>
+                                </li>
                             </ul>
                         </details>
                     </li>
@@ -86,6 +90,10 @@
                                 <li>
                                     <router-link to="/exo-lifecycle" class="hover:text-primary">Exercice
                                         lifeCycle</router-link>
+                                </li>
+                                <li>
+                                    <router-link to="/exo-props" class="hover:text-primary">Exercice
+                                        props</router-link>
                                 </li>
                             </ul>
                         </details>
@@ -142,6 +150,10 @@
                             <li>
                                 <router-link to="/life-cycle" class="hover:text-primary">Life Cycle</router-link>
                             </li>
+                            <li>
+                                <router-link to="/props" class="hover:text-primary">Props : Parent vers
+                                    enfant</router-link>
+                            </li>
 
                         </ul>
                     </details>
@@ -182,6 +194,14 @@
                             <li>
                                 <router-link to="/exo-lifecycle" class="hover:text-primary">Exercice
                                     lifeCycle</router-link>
+                            </li>
+                            <li>
+                                <router-link to="/life-cycle-correction" class="hover:text-primary">Exercice
+                                    lifeCycle Correction</router-link>
+                            </li>
+                            <li>
+                                <router-link to="/exo-props" class="hover:text-primary">Exercice
+                                    props</router-link>
                             </li>
                         </ul>
                     </details>
