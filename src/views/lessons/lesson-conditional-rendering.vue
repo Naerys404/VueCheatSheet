@@ -46,27 +46,27 @@
                     <!-- Code Exemple -->
                     <div class="mockup-code">
                         <pre class="whitespace-pre-wrap"><code>
-  &lt;template&gt;
-    &lt;div&gt;
-      &lt;button class="btn btn-primary" @click="toggleMessage"&gt;
-        {{ showMessage ? 'Masquer' : 'Afficher' }} le message
-      &lt;/button&gt;
-      &lt;p v-if="showMessage" class="mt-3 alert alert-success"&gt;
-        Ceci est un message conditionnellement rendu.
-      &lt;/p&gt;
-    &lt;/div&gt;
-  &lt;/template&gt;
-  
-  &lt;script setup&gt;
-  import { ref } from 'vue';
-  
-  const showMessage = ref(false);
-  
-  function toggleMessage() {
-    showMessage.value = !showMessage.value;
-  }
-  &lt;/script&gt;
-  </code></pre>
+    &lt;template&gt;
+        &lt;div&gt;
+        &lt;button class="btn btn-primary" @click="toggleMessage"&gt;
+            {{ showMessage ? 'Masquer' : 'Afficher' }} le message
+        &lt;/button&gt;
+        &lt;p v-if="showMessage" class="mt-3 alert alert-success"&gt;
+            Ceci est un message conditionnellement rendu.
+        &lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/template&gt;
+    
+    &lt;script setup&gt;
+    import { ref } from 'vue';
+    
+    const showMessage = ref(false);
+    
+    function toggleMessage() {
+        showMessage.value = !showMessage.value;
+    }
+    &lt;/script&gt;
+    </code></pre>
                     </div>
                     <!-- Rendu Exemple -->
                     <div

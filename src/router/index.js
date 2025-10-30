@@ -104,6 +104,26 @@ const router = createRouter({
             name: 'exo-styling-2',
             component: () => import('../views/exercices/exo-styling-2.vue')
         },
+        {
+            path: '/exo-v-for',
+            name: 'exo-v-for',
+            component: () => import('../views/exercices/exo-v-for.vue')
+        },
+        {
+            path: '/exo-v-if',
+            name: 'exo-v-if',
+            component: () => import('../views/exercices/exo-v-if.vue')
+        },
+        {
+            path: '/exo-lifecycle',
+            name: 'exo-lifecycle',
+            component: () => import('../views/exercices/exo-lifecycle.vue')
+        },
+        {
+            path: '/life-cycle',
+            name: 'life-cycle',
+            component: () => import('../views/lessons/lesson-lifecycle.vue')
+        },
     ]
 
 });

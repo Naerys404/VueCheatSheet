@@ -48,6 +48,9 @@
                                 <li>
                                     <router-link to="/v-for" class="hover:text-primary">V-for</router-link>
                                 </li>
+                                <li>
+                                    <router-link to="/life-cycle" class="hover:text-primary">Life Cycle</router-link>
+                                </li>
                             </ul>
                         </details>
                     </li>
@@ -73,6 +76,16 @@
                                 <li>
                                     <router-link to="/exo-styling-2" class="hover:text-primary">Exercice Dynamic styling
                                         2</router-link>
+                                </li>
+                                <li>
+                                    <router-link to="/exo-v-for" class="hover:text-primary">Exercice V-FOR</router-link>
+                                </li>
+                                <li>
+                                    <router-link to="/exo-v-if" class="hover:text-primary">Exercice V-IF</router-link>
+                                </li>
+                                <li>
+                                    <router-link to="/exo-lifecycle" class="hover:text-primary">Exercice
+                                        lifeCycle</router-link>
                                 </li>
                             </ul>
                         </details>
@@ -126,6 +139,9 @@
                             <li>
                                 <router-link to="/v-for" class="hover:text-primary">V-for</router-link>
                             </li>
+                            <li>
+                                <router-link to="/life-cycle" class="hover:text-primary">Life Cycle</router-link>
+                            </li>
 
                         </ul>
                     </details>
@@ -156,6 +172,16 @@
                             <li>
                                 <router-link to="/exo-styling-2" class="hover:text-primary">Exercice Dynamic styling
                                     2</router-link>
+                            </li>
+                            <li>
+                                <router-link to="/exo-v-for" class="hover:text-primary">Exercice V-FOR</router-link>
+                            </li>
+                            <li>
+                                <router-link to="/exo-v-if" class="hover:text-primary">Exercice V-IF</router-link>
+                            </li>
+                            <li>
+                                <router-link to="/exo-lifecycle" class="hover:text-primary">Exercice
+                                    lifeCycle</router-link>
                             </li>
                         </ul>
                     </details>
