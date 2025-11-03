@@ -4,9 +4,9 @@
             <div class="card-body">
                 <span class="badge badge-xs badge-warning">Composant OneFriend.vue</span>
                 <div class="flex justify-between">
-                    <h2 class="text-3xl font-bold">{{name}}</h2>
+                    <h2 class="text-3xl font-bold">{{ name }}</h2>
                 </div>
-                <ul class="mt-6 flex flex-col gap-2 text-xs">
+                <ul class="mt-6 flex flex-col gap-2 text-xs" v-if="displayDetails">
                     <li>
                         <svg xmlns="http://www.w3.org/2000/svg" class="size-4 me-2 inline-block text-success"
                             fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -33,37 +33,54 @@
                             fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                         </svg>
-                        <span class="badge" :class="premium ? 'badge-warning':'badge-ghost'">{{ premium ? 'Un ami en OR': 'Un ami en PLOMB' }}</span>
+                        <span class="badge" :class="premium ? 'badge-warning' : 'badge-ghost'">{{ premium ? 'Un ami en OR': 'Un ami en PLOMB' }}</span>
                     </li>
                 </ul>
-               
+                <div class="flex gap-3">
+                    <button type="button" class="btn btn-primary" @click="toggleDetails">Afficher détails</button>
+                    <button type="button" class="btn btn-secondary" @click="eventPremium(id)">Update Premium</button>
+                </div>
+
             </div>
         </div>
     </div>
 </template>
 
 <script setup lang="js">
-import { defineProps } from 'vue';
+import { defineProps,defineEmits, ref } from 'vue';
+
+let displayDetails = ref(false);
+
+const toggleDetails = () => {
+    displayDetails.value = !displayDetails.value ;}
+
+
+const emit = defineEmits(["mon-event-premium-update"]);
+
+const eventPremium = (id) => {
+    emit('mon-event-premium-update', id);
+}
+
 
 defineProps({
     id: {
-        type:String,
-        required:true,
+        type: String,
+        required: true,
     },
     name: {
-        type:String,
-        required:true,
+        type: String,
+        required: true,
     },
     phone: {
-        type:String,
-        required:true,
+        type: String,
+        required: true,
     },
     email: {
-        type:String,
-        required:true,
+        type: String,
+        required: true,
     },
-    premium:{
-        type:Boolean,
+    premium: {
+        type: Boolean,
     }
 
 })

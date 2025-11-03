@@ -55,6 +55,10 @@
                                     <router-link to="/props" class="hover:text-primary">Props : Parent vers
                                         enfant</router-link>
                                 </li>
+                                <li>
+                                    <router-link to="/emit" class="hover:text-primary">Emit : Enfant vers
+                                        parent</router-link>
+                                </li>
                             </ul>
                         </details>
                     </li>
@@ -95,12 +99,12 @@
                                     <router-link to="/exo-props" class="hover:text-primary">Exercice
                                         props</router-link>
                                 </li>
-                                <li>
-                                    <router-link to="/exo-pokeprops" class="hover:text-primary">Exercice
-                                        Pokemon props</router-link>
-                                </li>
                             </ul>
-                        </details>
+                    <li>
+                        <router-link to="/exo-emit" class="hover:text-primary">Exercice
+                            Emit</router-link>
+                    </li>
+                    </details>
                     </li>
                     <li>
                         <router-link to="/about" class="hover:text-primary">A propos</router-link>
@@ -158,6 +162,10 @@
                                 <router-link to="/props" class="hover:text-primary">Props : Parent vers
                                     enfant</router-link>
                             </li>
+                            <li>
+                                <router-link to="/emit" class="hover:text-primary">Emit : Enfant vers
+                                    parent</router-link>
+                            </li>
 
                         </ul>
                     </details>
@@ -210,6 +218,10 @@
                             <li>
                                 <router-link to="/exo-pokeprops" class="hover:text-primary">Exercice
                                     Pokemon props</router-link>
+                            </li>
+                            <li>
+                                <router-link to="/exo-emit" class="hover:text-primary">Exercice
+                                    Emit</router-link>
                             </li>
                         </ul>
                     </details>
