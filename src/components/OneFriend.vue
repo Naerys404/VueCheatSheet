@@ -6,7 +6,7 @@
                 <div class="flex justify-between">
                     <h2 class="text-3xl font-bold">{{ name }}</h2>
                 </div>
-                <ul class="mt-6 flex flex-col gap-2 text-xs" v-if="displayDetails">
+                <ul class="mt-6 flex flex-col gap-2 text-xs pb-5" v-if="displayDetails">
                     <li>
                         <svg xmlns="http://www.w3.org/2000/svg" class="size-4 me-2 inline-block text-success"
                             fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -36,9 +36,10 @@
                         <span class="badge" :class="premium ? 'badge-warning' : 'badge-ghost'">{{ premium ? 'Un ami en OR': 'Un ami en PLOMB' }}</span>
                     </li>
                 </ul>
-                <div class="flex gap-3">
+                <div class="flex flex-wrap gap-3">
                     <button type="button" class="btn btn-primary" @click="toggleDetails">Afficher détails</button>
                     <button type="button" class="btn btn-secondary" @click="eventPremium(id)">Update Premium</button>
+                    <button type="button" class="btn btn-error" @click="deleteFriend(id)">Supprimer l'ami</button>
                 </div>
 
             </div>
@@ -49,7 +50,7 @@
 <script setup lang="js">
 import { defineProps,defineEmits, ref } from 'vue';
 
-let displayDetails = ref(false);
+let displayDetails = ref(true);
 
 const toggleDetails = () => {
     displayDetails.value = !displayDetails.value ;}
@@ -60,22 +61,33 @@ const emit = defineEmits(
         "mon-event-premium-update": ({id}) => {
             if(id) {return true} 
             else {
-                console.warn("Pas d'identifiant");
+                console.warn("Pas d'identifiant: mise à jour du statut impossible.");
+                return false;
+            }
+        },
+        "delete-my-friend": ({id})=>{
+            if(id) {return true} 
+            else {
+                console.warn("Pas d'identifiant: suppression impossible.");
                 return false;
             }
         }
     }
 );
 
+const deleteFriend = (id) => {
+    emit('delete-my-friend', props.id)
+}
+
 const eventPremium = (id) => {
-    emit('mon-event-premium-update', id);
+    emit('mon-event-premium-update', props.id);
 }
 
 
-defineProps({
+const props = defineProps({
     id: {
         type: String,
-        required: true,
+        required: true
     },
     name: {
         type: String,
