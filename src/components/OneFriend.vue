@@ -55,7 +55,9 @@ const toggleDetails = () => {
     displayDetails.value = !displayDetails.value ;}
 
 
-const emit = defineEmits(["mon-event-premium-update"]);
+const emit = defineEmits(
+    {"mon-event-premium-update": {id:Number, required:true}}
+);
 
 const eventPremium = (id) => {
     emit('mon-event-premium-update', id);
