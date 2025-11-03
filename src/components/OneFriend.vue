@@ -38,8 +38,8 @@
                 </ul>
                 <div class="flex flex-wrap gap-3">
                     <button type="button" class="btn btn-primary" @click="toggleDetails">Afficher détails</button>
-                    <button type="button" class="btn btn-secondary" @click="eventPremium(id)">Update Premium</button>
-                    <button type="button" class="btn btn-error" @click="deleteFriend(id)">Supprimer l'ami</button>
+                    <button type="button" class="btn btn-secondary" @click="eventPremium">Update Premium</button>
+                    <button type="button" class="btn btn-error" @click="deleteFriend">Supprimer l'ami</button>
                 </div>
 
             </div>

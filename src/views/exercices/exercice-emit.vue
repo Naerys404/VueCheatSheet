@@ -2,7 +2,7 @@
     <div class="container mx-auto p-4 justify-center flex flex-col">
         <h1 class="text-2xl text-primary font-bold">Exercice des EMITS</h1>
         <div class="flex flex-wrap">
-            <div v-for="amis in lesAmis" :key="index">
+            <div v-for="amis in lesAmis">
                 <OneFriend v-on:mon-event-premium-update="parentUpdatePremium" v-on:delete-my-friend="deleteMyFriend" :name="amis.name" :email="amis.email" :id="amis.id" :phone="amis.phone" :premium="amis.premium"/>
             </div>
             <div class="bg-accent p-10 rounded-xl">{{ lesAmis }}</div>
@@ -70,6 +70,5 @@ const lesAmis = ref([
         premium: true
     }
 ]);
-
 
 </script>
