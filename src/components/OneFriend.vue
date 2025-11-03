@@ -58,14 +58,14 @@ const toggleDetails = () => {
 
 const emit = defineEmits(
     {
-        "mon-event-premium-update": ({id}) => {
+        "mon-event-premium-update": (id) => {
             if(id) {return true} 
             else {
                 console.warn("Pas d'identifiant: mise à jour du statut impossible.");
                 return false;
             }
         },
-        "delete-my-friend": ({id})=>{
+        "delete-my-friend": (id)=>{
             if(id) {return true} 
             else {
                 console.warn("Pas d'identifiant: suppression impossible.");
@@ -75,11 +75,11 @@ const emit = defineEmits(
     }
 );
 
-const deleteFriend = (id) => {
+const deleteFriend = () => {
     emit('delete-my-friend', props.id)
 }
 
-const eventPremium = (id) => {
+const eventPremium = () => {
     emit('mon-event-premium-update', props.id);
 }
 

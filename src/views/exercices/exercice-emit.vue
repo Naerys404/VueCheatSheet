@@ -23,7 +23,7 @@ const parentUpdatePremium = (eventPremium) => {
 
 const deleteMyFriend = (deleteFriend) => {
     let ami = lesAmis.value.indexOf((ami)=> ami.id == deleteFriend);
-    lesAmis.value.slice(ami);
+    lesAmis.value = lesAmis.value.filter(ami => ami.id !== deleteFriend);
 }
 
 const lesAmis = ref([
