@@ -56,7 +56,15 @@ const toggleDetails = () => {
 
 
 const emit = defineEmits(
-    {"mon-event-premium-update": {id:Number, required:true}}
+    {
+        "mon-event-premium-update": ({id}) => {
+            if(id) {return true} 
+            else {
+                console.warn("Pas d'identifiant");
+                return false;
+            }
+        }
+    }
 );
 
 const eventPremium = (id) => {
