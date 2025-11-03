@@ -154,6 +154,15 @@ const router = createRouter({
             name: 'emit',
             component: () => import('../views/lessons/lesson-emit.vue')
         },
+        {
+            path: '/:pathMatch(.*)*',
+            name: 'not-found',
+            meta: {
+                description: 'Page non trouvée'
+            },
+            component: () => import('../views/not-found.vue')
+        },
+       
     ]
 
 });
