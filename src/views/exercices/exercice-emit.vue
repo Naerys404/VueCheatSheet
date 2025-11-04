@@ -18,6 +18,8 @@
 import { ref } from 'vue';
 import OneFriend from '../../components/OneFriend.vue';
 import NewFriend from '../../components/NewFriend.vue';
+import { uuid } from 'vue-uuid';
+
 
 const parentUpdatePremium = (eventPremium) => {
     let ami = lesAmis.value.find((ami)=> ami.id == eventPremium);
@@ -32,7 +34,7 @@ const deleteMyFriend = (deleteFriend) => {
 const addFriend = (submit) => {
     const newFriend = {
         name: submit.name.value,
-        id:submit.id.value,
+        id:uuid.v1(),
         phone : submit.phone.value,
         email:submit.mail.value,
         premium: false   

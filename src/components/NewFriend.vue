@@ -50,17 +50,15 @@
 
 <script setup lang="js">
 import { defineEmits, ref } from 'vue';
-import { uuid } from 'vue-uuid';
 
 const name = ref();
 const phone = ref();
 const mail = ref();
-const id = ref(uuid.v1());
 
 
 const emit = defineEmits(
-       { "submit" : (id) => {
-            if(id) {return true} 
+       { "submit" : (name) => {
+            if(name) {return true} 
             else {
                 console.warn("Pas d'identifiant: creation impossible.");
                 return false;
@@ -68,7 +66,7 @@ const emit = defineEmits(
         }}
 );
 const submit = () => {
-    emit('submit', {id, name, phone, mail})
+    emit('submit', {name, phone, mail})
 }
 
 
