@@ -241,6 +241,14 @@ const router = createRouter({
             component: () => import('../views/lessons/lesson-emit.vue')
         },
         {
+            path: '/lesson-pinia',
+            name: 'lesson-pinia',
+             meta: {
+                description: 'Leçon sur Pinia'
+            },
+            component: () => import('../views/lessons/lesson-lib-pinia.vue')
+        },
+        {
             path: '/:pathMatch(.*)*',
             name: 'not-found',
             meta: {
