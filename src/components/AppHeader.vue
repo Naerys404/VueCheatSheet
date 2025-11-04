@@ -12,55 +12,7 @@
                 <ul tabindex="-1"
                     class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
                     <li>
-                        <details>
-                            <summary>Lessons</summary>
-                            <ul class="p-2">
-                                <li>
-                                    <router-link to="/v-html" class="hover:text-primary">V-html</router-link>
-                                </li>
-                                <li>
-                                    <router-link to="/v-bind" class="hover:text-primary">V-bind</router-link>
-                                </li>
-                                <li>
-                                    <router-link to="/v-on" class="hover:text-primary">V-on</router-link>
-                                </li>
-                                <li>
-                                    <router-link to="/text-interpolation" class="hover:text-primary">Text
-                                        interpolation</router-link>
-                                </li>
-                                <li>
-                                    <router-link to="/two-ways-binding" class="hover:text-primary">Two ways
-                                        binding</router-link>
-                                </li>
-                                <li>
-                                    <router-link to="/computed" class="hover:text-primary">Computed</router-link>
-                                </li>
-                                <li>
-                                    <router-link to="/watchers" class="hover:text-primary">Watchers</router-link>
-                                </li>
-                                <li>
-                                    <router-link to="/dynamic-styling" class="hover:text-primary">Dynamic
-                                        Styling</router-link>
-                                </li>
-                                <li>
-                                    <router-link to="/v-if" class="hover:text-primary">V-if</router-link>
-                                </li>
-                                <li>
-                                    <router-link to="/v-for" class="hover:text-primary">V-for</router-link>
-                                </li>
-                                <li>
-                                    <router-link to="/life-cycle" class="hover:text-primary">Life Cycle</router-link>
-                                </li>
-                                <li>
-                                    <router-link to="/props" class="hover:text-primary">Props : Parent vers
-                                        enfant</router-link>
-                                </li>
-                                <li>
-                                    <router-link to="/emit" class="hover:text-primary">Emit : Enfant vers
-                                        parent</router-link>
-                                </li>
-                            </ul>
-                        </details>
+                      <router-link to="/lessons" class="hover:text-primary">Leçons</router-link>
                     </li>
                     <li>
                         <router-link to="/exercices" class="hover:text-primary">Exercices</router-link>
@@ -78,60 +30,11 @@
         <div class="navbar-center hidden lg:flex z-10">
             <ul class="menu menu-horizontal px-1">
                 <li>
-                    <details>
-                        <summary>Lessons</summary>
-                        <ul class="p-2">
-                            <li>
-                                <router-link to="/v-html" class="hover:text-primary">V-html</router-link>
-                            </li>
-                            <li>
-                                <router-link to="/v-bind" class="hover:text-primary">V-bind</router-link>
-                            </li>
-                            <li>
-                                <router-link to="/v-on" class="hover:text-primary">V-on</router-link>
-                            </li>
-                            <li>
-                                <router-link to="/text-interpolation" class="hover:text-primary">Text
-                                    interpolation</router-link>
-                            </li>
-                            <li>
-                                <router-link to="/two-ways-binding" class="hover:text-primary">Two ways
-                                    binding</router-link>
-                            </li>
-                            <li>
-                                <router-link to="/computed" class="hover:text-primary">Computed</router-link>
-                            </li>
-                            <li>
-                                <router-link to="/watchers" class="hover:text-primary">Watchers</router-link>
-                            </li>
-                            <li>
-                                <router-link to="/dynamic-styling" class="hover:text-primary">Dynamic
-                                    Styling</router-link>
-                            </li>
-                            <li>
-                                <router-link to="/v-if" class="hover:text-primary">V-if</router-link>
-                            </li>
-                            <li>
-                                <router-link to="/v-for" class="hover:text-primary">V-for</router-link>
-                            </li>
-                            <li>
-                                <router-link to="/life-cycle" class="hover:text-primary">Life Cycle</router-link>
-                            </li>
-                            <li>
-                                <router-link to="/props" class="hover:text-primary">Props : Parent vers
-                                    enfant</router-link>
-                            </li>
-                            <li>
-                                <router-link to="/emit" class="hover:text-primary">Emit : Enfant vers
-                                    parent</router-link>
-                            </li>
-
-                        </ul>
-                    </details>
+                   <router-link to="/lessons" class="hover:text-primary">Leçons</router-link>
                 </li>
                  <li>
-                        <router-link to="/exercices" class="hover:text-primary">Exercices</router-link>
-                    </li>
+                    <router-link to="/exercices" class="hover:text-primary">Exercices</router-link>
+                </li>
                 <li>
                     <router-link to="/about" class="hover:text-primary">A propos</router-link>
                 </li>

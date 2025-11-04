@@ -24,7 +24,7 @@ const router = createRouter({
             component: () => import('../views/AppAbout.vue')
         },
         {
-            path: '/text-interpolation',
+            path: '/lesson-text-interpolation',
             name: 'Text interpolation',
              meta: {
                 description: 'Leçon interpolation'
@@ -40,7 +40,7 @@ const router = createRouter({
             component: () => import('../views/exercices/exerciceInterpolation.vue')
         },
         {
-            path: '/v-html',
+            path: '/lesson-v-html',
             name: 'lesson v-html',
              meta: {
                 description: 'Leçon v-html : innerhtml'
@@ -48,7 +48,7 @@ const router = createRouter({
             component: () => import('../views/lessons/inline-templating.vue')
         },
         {
-            path: '/v-bind',
+            path: '/lesson-v-bind',
             name: 'lesson v-bind',
              meta: {
                 description: 'Leçon v-bind : variables'
@@ -65,7 +65,7 @@ const router = createRouter({
             component: () => import('../views/exercices/tpVbind.vue')
         },
         {
-            path: '/v-on',
+            path: '/lesson-v-on',
             name: 'v-on',
             meta: {
                 description: 'Leçon v-on : events'
@@ -81,7 +81,7 @@ const router = createRouter({
             component: () => import('../views/exercices/exerciceV-on.vue')
         },
         {
-            path: '/two-ways-binding',
+            path: '/lesson-two-ways-binding',
             name: 'two-ways-binding',
                meta: {
                 description: 'Leçon v-model : two ways binding'
@@ -89,7 +89,7 @@ const router = createRouter({
             component: () => import('../views/lessons/lesson-two-way-binding.vue')
         },
         {
-            path: '/watchers',
+            path: '/lesson-watchers',
             name: 'watchers',
                meta: {
                 description: 'Leçon watchers'
@@ -97,7 +97,7 @@ const router = createRouter({
             component: () => import('../views/lessons/lesson-watchers.vue')
         },
         {
-            path: '/computed',
+            path: '/lesson-computed',
             name: 'computed',
                meta: {
                 description: 'Leçon computed'
@@ -105,7 +105,7 @@ const router = createRouter({
             component: () => import('../views/lessons/lesson-computed-properties.vue')
         },
         {
-            path: '/dynamic-styling',
+            path: '/lesson-dynamic-styling',
             name: 'dynamic-styling',
                meta: {
                 description: 'Leçon dynamic styling'
@@ -113,7 +113,7 @@ const router = createRouter({
             component: () => import('../views/lessons/lesson-dynamic-styling.vue')
         },
         {
-            path: '/v-if',
+            path: '/lesson-v-if',
             name: 'v-if',
                meta: {
                 description: 'Leçon v-if'
@@ -121,7 +121,7 @@ const router = createRouter({
             component: () => import('../views/lessons/lesson-conditional-rendering.vue')
         },
         {
-            path: '/v-for',
+            path: '/lesson-v-for',
             name: 'v-for',
              meta: {
                 description: 'Leçon v-for'
@@ -177,7 +177,7 @@ const router = createRouter({
             component: () => import('../views/exercices/exo-lifecycle.vue')
         },
         {
-            path: '/life-cycle',
+            path: '/lesson-life-cycle',
             name: 'life-cycle',
              meta: {
                 description: 'Leçon lifecycle'
@@ -225,7 +225,7 @@ const router = createRouter({
             component: () => import('../views/exercices/tp-component-communication.vue')
         },
         {
-            path: '/props',
+            path: '/lesson-props',
             name: 'props',
              meta: {
                 description: 'Leçon sur les props'
@@ -233,7 +233,7 @@ const router = createRouter({
             component: () => import('../views/lessons/lesson-props.vue')
         },
         {
-            path: '/emit',
+            path: '/lesson-emit',
             name: 'emit',
              meta: {
                 description: 'Leçon sur emits'
@@ -263,6 +263,14 @@ const router = createRouter({
                 description: 'Hub d\'exercices'
             },
             component: () => import('../views/all-exercices.vue')
+        },
+        {
+            path: '/lessons',
+            name: 'lessons',
+            meta: {
+                description: 'Hub de leçons'
+            },
+            component: () => import('../views/all-lessons.vue')
         },
                 
         {
