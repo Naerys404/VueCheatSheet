@@ -104,6 +104,10 @@
                         <router-link to="/exo-emit" class="hover:text-primary">Exercice
                             Emit</router-link>
                     </li>
+                    <li>
+                        <router-link to="/tp-emit-props" class="hover:text-primary">TP Emits
+                            Props</router-link>
+                    </li>
                     </details>
                     </li>
                     <li>
@@ -222,6 +226,10 @@
                             <li>
                                 <router-link to="/exo-emit" class="hover:text-primary">Exercice
                                     Emit</router-link>
+                            </li>
+                            <li>
+                                <router-link to="/tp-emit-props" class="hover:text-primary">TP Emits
+                                    Props</router-link>
                             </li>
                         </ul>
                     </details>

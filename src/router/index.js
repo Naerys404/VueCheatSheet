@@ -145,6 +145,11 @@ const router = createRouter({
             component: () => import('../views/exercices/exo-pokemonProps.vue')
         },
         {
+            path: '/tp-emit-props',
+            name: 'tp-emit-props',
+            component: () => import('../views/exercices/tp-component-communication.vue')
+        },
+        {
             path: '/props',
             name: 'props',
             component: () => import('../views/lessons/lesson-props.vue')
@@ -162,6 +167,7 @@ const router = createRouter({
             },
             component: () => import('../views/not-found.vue')
         },
+    
        
     ]
 
