@@ -20,11 +20,11 @@ const nom = ref('');
 const age = ref(null);
 
 const emit = defineEmits(
-       { "submit" : (nom) => {
-            if(nom) {
+       { "submit" : (nom, age) => {
+            if(nom && age !== null) {
                 return true
             } else {
-                console.warn("Il manque le nom");
+                console.warn("Il manque des informations !");
                 return false;
             }
         }}
