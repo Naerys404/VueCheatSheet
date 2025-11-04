@@ -71,7 +71,7 @@ const emit = defineEmits(
                 console.warn("Pas d'identifiant: suppression impossible.");
                 return false;
             }
-        }
+        },
     }
 );
 
@@ -103,6 +103,7 @@ const props = defineProps({
     },
     premium: {
         type: Boolean,
+        default:false
     }
 
 })
