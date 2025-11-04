@@ -63,52 +63,7 @@
                         </details>
                     </li>
                     <li>
-                        <details>
-                            <summary>Exercices</summary>
-                            <ul class="p-2">
-                                <li>
-                                    <router-link to="/exo-interpolation" class="hover:text-primary">Exercice
-                                        interpolation</router-link>
-                                </li>
-                                <li>
-                                    <router-link to="/tp-vbind" class="hover:text-primary">TP
-                                        V-bind / interpolation </router-link>
-                                </li>
-                                <li>
-                                    <router-link to="/exo-v-on" class="hover:text-primary">Exercice V-On </router-link>
-                                </li>
-                                <li>
-                                    <router-link to="/exo-styling" class="hover:text-primary">Exercice Dynamic
-                                        styling</router-link>
-                                </li>
-                                <li>
-                                    <router-link to="/exo-styling-2" class="hover:text-primary">Exercice Dynamic styling
-                                        2</router-link>
-                                </li>
-                                <li>
-                                    <router-link to="/exo-v-for" class="hover:text-primary">Exercice V-FOR</router-link>
-                                </li>
-                                <li>
-                                    <router-link to="/exo-v-if" class="hover:text-primary">Exercice V-IF</router-link>
-                                </li>
-                                <li>
-                                    <router-link to="/exo-lifecycle" class="hover:text-primary">Exercice
-                                        lifeCycle</router-link>
-                                </li>
-                                <li>
-                                    <router-link to="/exo-props" class="hover:text-primary">Exercice
-                                        props</router-link>
-                                </li>
-                            </ul>
-                    <li>
-                        <router-link to="/exo-emit" class="hover:text-primary">Exercice
-                            Emit</router-link>
-                    </li>
-                    <li>
-                        <router-link to="/tp-emit-props" class="hover:text-primary">TP Emits
-                            Props</router-link>
-                    </li>
-                    </details>
+                        <router-link to="/exercices" class="hover:text-primary">Exercices</router-link>
                     </li>
                     <li>
                         <router-link to="/about" class="hover:text-primary">A propos</router-link>
@@ -174,66 +129,9 @@
                         </ul>
                     </details>
                 </li>
-                <li>
-                    <details>
-                        <summary>Exercices</summary>
-                        <ul class="p-2">
-                            <li>
-                                <router-link to="/exo-interpolation" class="hover:text-primary">Exercice
-                                    interpolation</router-link>
-                            </li>
-                            <li>
-                                <router-link to="/tp-vbind" class="hover:text-primary">TP
-                                    V-bind / interpolation </router-link>
-                            </li>
-                            <li>
-                                <router-link to="/exo-v-on" class="hover:text-primary">Exercice V-On </router-link>
-                            </li>
-                            <li>
-                                <router-link to="/exo-watcher" class="hover:text-primary">Exercice watchers
-                                </router-link>
-                            </li>
-                            <li>
-                                <router-link to="/exo-styling" class="hover:text-primary">Exercice Dynamic
-                                    styling</router-link>
-                            </li>
-                            <li>
-                                <router-link to="/exo-styling-2" class="hover:text-primary">Exercice Dynamic styling
-                                    2</router-link>
-                            </li>
-                            <li>
-                                <router-link to="/exo-v-for" class="hover:text-primary">Exercice V-FOR</router-link>
-                            </li>
-                            <li>
-                                <router-link to="/exo-v-if" class="hover:text-primary">Exercice V-IF</router-link>
-                            </li>
-                            <li>
-                                <router-link to="/exo-lifecycle" class="hover:text-primary">Exercice
-                                    lifeCycle</router-link>
-                            </li>
-                            <li>
-                                <router-link to="/life-cycle-correction" class="hover:text-primary">Exercice
-                                    lifeCycle Correction</router-link>
-                            </li>
-                            <li>
-                                <router-link to="/exo-props" class="hover:text-primary">Exercice
-                                    props</router-link>
-                            </li>
-                            <li>
-                                <router-link to="/exo-pokeprops" class="hover:text-primary">Exercice
-                                    Pokemon props</router-link>
-                            </li>
-                            <li>
-                                <router-link to="/exo-emit" class="hover:text-primary">Exercice
-                                    Emit</router-link>
-                            </li>
-                            <li>
-                                <router-link to="/tp-emit-props" class="hover:text-primary">TP Emits
-                                    Props</router-link>
-                            </li>
-                        </ul>
-                    </details>
-                </li>
+                 <li>
+                        <router-link to="/exercices" class="hover:text-primary">Exercices</router-link>
+                    </li>
                 <li>
                     <router-link to="/about" class="hover:text-primary">A propos</router-link>
                 </li>
