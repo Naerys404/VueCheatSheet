@@ -288,6 +288,22 @@ const router = createRouter({
             },
             component: () => import('../views/all-lessons.vue')
         },
+        {
+            path: '/articles',
+            name: 'articles',
+            meta: {
+                description: 'Article'
+            },
+            component: () => import('../views/firebase-articles-manager.vue')
+        },
+        {
+            path: '/connexion',
+            name: 'auth',
+            meta: {
+                description: 'Connexion'
+            },
+            component: () => import('../views/AppAuth.vue')
+        },
                 
         {
             path: "/details/:id/:itemName", //Exemple de route avec 2 paramètres  
@@ -295,9 +311,6 @@ const router = createRouter({
             component: () => import("../views/../components/DetailsPage.vue"),
             props:true
         },
-
-    
-       
     ]
 
 });

@@ -12,7 +12,7 @@
                 <ul tabindex="-1"
                     class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
                     <li>
-                      <router-link to="/lessons" class="hover:text-primary">Leçons</router-link>
+                        <router-link to="/lessons" class="hover:text-primary">Leçons</router-link>
                     </li>
                     <li>
                         <router-link to="/exercices" class="hover:text-primary">Exercices</router-link>
@@ -23,6 +23,9 @@
                     <li>
                         <router-link to="/contact" class="hover:text-primary">Contact</router-link>
                     </li>
+                    <li>
+                        <router-link to="/connexion" class="hover:text-primary">Connexion</router-link>
+                    </li>
                 </ul>
             </div>
             <router-link to="/" class="text-xl">Vue CheatSheet</router-link>
@@ -30,10 +33,13 @@
         <div class="navbar-center hidden lg:flex z-10">
             <ul class="menu menu-horizontal px-1">
                 <li>
-                   <router-link to="/lessons" class="hover:text-primary">Leçons</router-link>
+                    <router-link to="/lessons" class="hover:text-primary">Leçons</router-link>
                 </li>
-                 <li>
+                <li>
                     <router-link to="/exercices" class="hover:text-primary">Exercices</router-link>
+                </li>
+                <li>
+                    <router-link to="/articles" class="hover:text-primary">Articles</router-link>
                 </li>
                 <li>
                     <router-link to="/about" class="hover:text-primary">A propos</router-link>
@@ -41,6 +47,10 @@
                 <li>
                     <router-link to="/contact" class="hover:text-primary">Contact</router-link>
                 </li>
+                <li>
+                    <router-link to="/connexion" class="hover:text-primary">Connexion</router-link>
+                </li>
+
             </ul>
         </div>
         <div class="navbar-end">
