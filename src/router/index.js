@@ -33,7 +33,7 @@ const router = createRouter({
         },
         {
             path: '/exo-interpolation',
-            name: 'exercice interpolation',
+            name: 'Exercice interpolation',
              meta: {
                 description: 'Exercice interpolation'
             },
@@ -41,7 +41,7 @@ const router = createRouter({
         },
         {
             path: '/lesson-v-html',
-            name: 'lesson v-html',
+            name: 'V-html',
              meta: {
                 description: 'Leçon v-html : innerhtml'
             },
@@ -49,7 +49,7 @@ const router = createRouter({
         },
         {
             path: '/lesson-v-bind',
-            name: 'lesson v-bind',
+            name: 'V-bind',
              meta: {
                 description: 'Leçon v-bind : variables'
             },
@@ -58,7 +58,7 @@ const router = createRouter({
         },
         {
             path: '/exo-tp-vbind',
-            name: 'exo v-bind',
+            name: 'Exercice v-bind',
              meta: {
                 description: 'Exercice v-bind : variables'
             },
@@ -66,7 +66,7 @@ const router = createRouter({
         },
         {
             path: '/lesson-v-on',
-            name: 'v-on',
+            name: 'V-on',
             meta: {
                 description: 'Leçon v-on : events'
             },
@@ -74,7 +74,7 @@ const router = createRouter({
         },
         {
             path: '/exo-v-on',
-            name: 'exo-v-on',
+            name: 'Exercice v-on',
                meta: {
                 description: 'Exercice v-on : events'
             },
@@ -82,7 +82,7 @@ const router = createRouter({
         },
         {
             path: '/lesson-two-ways-binding',
-            name: 'two-ways-binding',
+            name: 'Two ways binding : v-model',
                meta: {
                 description: 'Leçon v-model : two ways binding'
             },
@@ -90,7 +90,7 @@ const router = createRouter({
         },
         {
             path: '/lesson-watchers',
-            name: 'watchers',
+            name: 'Watchers',
                meta: {
                 description: 'Leçon watchers'
             },
@@ -98,7 +98,7 @@ const router = createRouter({
         },
         {
             path: '/lesson-computed',
-            name: 'computed',
+            name: 'Computed',
                meta: {
                 description: 'Leçon computed'
             },
@@ -106,7 +106,7 @@ const router = createRouter({
         },
         {
             path: '/lesson-dynamic-styling',
-            name: 'dynamic-styling',
+            name: 'Dynamic-styling',
                meta: {
                 description: 'Leçon dynamic styling'
             },
@@ -114,7 +114,7 @@ const router = createRouter({
         },
         {
             path: '/lesson-v-if',
-            name: 'v-if',
+            name: 'V-if',
                meta: {
                 description: 'Leçon v-if'
             },
@@ -122,7 +122,7 @@ const router = createRouter({
         },
         {
             path: '/lesson-v-for',
-            name: 'v-for',
+            name: 'V-for',
              meta: {
                 description: 'Leçon v-for'
             },
@@ -130,7 +130,7 @@ const router = createRouter({
         },
         {
             path: '/exo-watcher',
-            name: 'exo-watcher',
+            name: 'Exercice watcher',
              meta: {
                 description: 'Exercice Watcher'
             },
@@ -138,7 +138,7 @@ const router = createRouter({
         },
         {
             path: '/exo-styling',
-            name: 'exo-styling',
+            name: 'Exercice dynamic styling',
              meta: {
                 description: 'Exercice Dynamic styling 1'
             },
@@ -146,7 +146,7 @@ const router = createRouter({
         },
         {
             path: '/exo-styling-2',
-            name: 'exo-styling-2',
+            name: 'Exercice dynamic styling-2',
             meta: {
                 description: 'Exercice Dynamic styling 2'
             },
@@ -154,7 +154,7 @@ const router = createRouter({
         },
         {
             path: '/exo-v-for',
-            name: 'exo-v-for',
+            name: 'Exercice v-for',
             meta: {
                 description: 'Exercice v-for'
             },
@@ -162,7 +162,7 @@ const router = createRouter({
         },
         {
             path: '/exo-v-if',
-            name: 'exo-v-if',
+            name: 'Exercice v-if',
              meta: {
                 description: 'Exercice v-if'
             },
@@ -170,7 +170,7 @@ const router = createRouter({
         },
         {
             path: '/exo-lifecycle',
-            name: 'exo-lifecycle',
+            name: 'Exercice lifecycle',
              meta: {
                 description: 'Exercice lifecycle'
             },
@@ -178,7 +178,7 @@ const router = createRouter({
         },
         {
             path: '/lesson-life-cycle',
-            name: 'life-cycle',
+            name: 'Lifecycle',
              meta: {
                 description: 'Leçon lifecycle'
             },
@@ -186,7 +186,7 @@ const router = createRouter({
         },
         {
             path: '/exo-life-cycle-correction',
-            name: 'life-cycle-correction',
+            name: 'Lifecycle correction',
              meta: {
                 description: 'Correction exercice lifecycle'
             },
@@ -194,7 +194,7 @@ const router = createRouter({
         },
         {
             path: '/exo-props',
-            name: 'exo-props',
+            name: 'Props',
              meta: {
                 description: 'Exercice props'
             },
@@ -202,7 +202,7 @@ const router = createRouter({
         },
         {
             path: '/exo-emit',
-            name: 'exo-emit',
+            name: 'Emits',
              meta: {
                 description: 'Exercice emits'
             },
@@ -210,7 +210,7 @@ const router = createRouter({
         },
         {
             path: '/exo-pokeprops',
-            name: 'exo-pokeprops',
+            name: 'Exercice fetch Pokemon : Props',
              meta: {
                 description: 'Fetch pokemon + props'
             },
@@ -218,7 +218,7 @@ const router = createRouter({
         },
         {
             path: '/exo-tp-emit-props',
-            name: 'tp-emit-props',
+            name: 'TP-emits-props',
              meta: {
                 description: 'TP sur les emits et props'
             },
@@ -226,7 +226,7 @@ const router = createRouter({
         },
         {
             path: '/lesson-props',
-            name: 'props',
+            name: 'Props',
              meta: {
                 description: 'Leçon sur les props'
             },
@@ -234,7 +234,7 @@ const router = createRouter({
         },
         {
             path: '/lesson-emit',
-            name: 'emit',
+            name: 'Emits',
              meta: {
                 description: 'Leçon sur emits'
             },
@@ -242,7 +242,7 @@ const router = createRouter({
         },
         {
             path: '/lesson-pinia',
-            name: 'lesson-pinia',
+            name: 'Pinia',
              meta: {
                 description: 'Leçon sur Pinia'
             },
@@ -263,6 +263,14 @@ const router = createRouter({
                 description: 'Router dans Vue.js'
             },
             component: () => import('../views/lessons/lesson-router.vue')
+        },
+        {
+            path: '/lesson-ChartJS',
+            name: 'ChartJS',
+            meta: {
+                description: 'Utilisation de ChartJS'
+            },
+            component: () => import('../views/lessons/lesson-lib-chartjs.vue')
         },
         {
             path: '/exercices',
