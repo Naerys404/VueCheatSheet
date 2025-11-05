@@ -10,8 +10,8 @@
       <p class="mb-5 text-lg">
         Un petit site toolbox qui regroupe les cours et exercices sur VueJs vus avec <span class="text-primary text-bold">Adrar Pôle Numérique</span>
       </p>
-      <button class="btn btn-primary mr-5">Voir les leçons</button>
-      <button class="btn btn-secondary">Voir les exercices</button>
+      <button class="btn btn-primary mr-5"><router-link to="/lessons">Voir les leçons</router-link></button>
+      <button class="btn btn-secondary"><router-link to="/exercices">Voir les exercices</router-link></button>
     </div>
   </div>
 </div>
