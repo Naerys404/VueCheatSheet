@@ -297,12 +297,20 @@ const router = createRouter({
             component: () => import('../views/firebase-articles-manager.vue')
         },
         {
-            path: '/connexion',
-            name: 'auth',
+            path: '/login',
+            name: 'login',
             meta: {
                 description: 'Connexion'
             },
-            component: () => import('../views/AppAuth.vue')
+            component: () => import('../views/login.vue')
+        },
+        {
+            path: '/register',
+            name: 'register',
+            meta: {
+                description: 'Inscription'
+            },
+            component: () => import('../views/register.vue')
         },
                 
         {

@@ -24,7 +24,10 @@
                         <router-link to="/contact" class="hover:text-primary">Contact</router-link>
                     </li>
                     <li>
-                        <router-link to="/connexion" class="hover:text-primary">Connexion</router-link>
+                        <router-link to="/login" class="hover:text-primary">Connexion</router-link>
+                    </li>
+                    <li>
+                        <router-link to="/register" class="hover:text-primary">Inscription</router-link>
                     </li>
                 </ul>
             </div>
@@ -48,9 +51,11 @@
                     <router-link to="/contact" class="hover:text-primary">Contact</router-link>
                 </li>
                 <li>
-                    <router-link to="/connexion" class="hover:text-primary">Connexion</router-link>
+                    <router-link to="/login" class="hover:text-primary">Connexion</router-link>
                 </li>
-
+                <li>
+                    <router-link to="/register" class="hover:text-primary">Inscription</router-link>
+                </li>
             </ul>
         </div>
         <div class="navbar-end">

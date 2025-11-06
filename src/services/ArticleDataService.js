@@ -4,10 +4,11 @@ import { ref, push, update, remove, onValue } from "firebase/database";
 
 class ArticleDataService {
     constructor() {
+        //Ref de firebase permet de faire référence à la base de données firebase.
         this.dbRef = ref(database, "articles");
     }
 
-    // Obtenir tous les articles
+    // Obtenir tous les articles (onValue : addeventlistener des bases de données)
     getAll(callback) {
         onValue(this.dbRef, callback);
     }
